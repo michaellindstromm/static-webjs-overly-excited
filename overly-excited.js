@@ -9,12 +9,15 @@ function addExcitement (theWordArray) {
      */
     let walrus = "";
 
+
+
     theWordArray.forEach(function(word){
-      if (indexof(walrus[word] + 1) % 3 === 0) {
+      if ((theWordArray.indexOf(word) + 1) % 3 === 0) {
         console.log(walrus += word + "! ");
       } else {
         console.log(walrus += word + " ");
       }
+
     });
 
 
